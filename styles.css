@@ -13,7 +13,7 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 175px 600px
+    grid-template-rows: 150px 600px
 }
 
 .sidebar {
@@ -32,12 +32,15 @@
     font-size: 40px;
 }
 
-ul, li {
+.menu>ul, li {
+    display: flex;
     list-style-type: none;
+    flex-direction: column;
+    gap: 10px;
 }
 
 li {
-    padding: 10px;
+    cursor: pointer;
 }
 
 #main, #settings {
@@ -95,5 +98,50 @@ img {
     padding-right: 50px;
 }
 
+.search-bottom {
+    display: flex;
+    margin: 16px;
+    padding-left: 45px;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.Greetings>#name {
+    font-size: larger;
+    font-weight: 800;
+}
+
+.search-bottom>ul {
+    display: flex;
+    gap: 25px;
+    padding-right: 50px;
+}
+
+.search-bottom>ul>button {
+    background-color: lightgrey;
+    border-radius: 60px;
+    border: 0.1px solid black;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+}
+
+ul button:hover {
+    background-color: rgb(205, 204, 204); 
+}
+
+ul button:active {
+    transform: translateY(-1px);
+}
+
+.body {
+    
+}
 
