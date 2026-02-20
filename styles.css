@@ -13,7 +13,7 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 150px 600px
+    grid-template-rows: 150px minmax(600px, auto)
 }
 
 .sidebar {
@@ -203,3 +203,43 @@ svg {
     padding-right: 20px;
 }
 
+.right {
+    margin: 16px 16px 16px 0px;
+    padding-top: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.announcements {
+    background-color: white;
+    border-radius: 5px;
+    padding-top: 10px;
+}
+
+.place {
+    margin: 10px;
+}
+
+.announcements .info {
+    font-size: small;
+    display: grid;
+    margin: 16px;
+    padding-bottom: 10px;
+    grid-template-rows: auto;
+    border-bottom: 0.1px solid rgb(140, 140, 140);
+}
+
+.announcements .info-diff {
+    font-size: small;
+    display: grid;
+    margin: 16px;
+    padding-bottom: 10px;
+    grid-template-rows: auto;
+}
+
+.announcements span.text {
+    font-size: smaller;
+    font-weight: 100;
+    color: #636363;
+}
