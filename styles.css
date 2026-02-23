@@ -1,262 +1,303 @@
 * {
-    gap: 0;
-    margin: 0;
-    font-family: garamond, serif;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  font-family: garamond, serif;
 }
 
 .body {
-    display: grid;
-    background-color: #c4c4c4; 
-    margin: 0;
+  display: grid;
+  background-color: #c4c4c4;
+  margin: 0;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 150px minmax(600px, auto)
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 150px minmax(600px, auto);
 }
 
 .sidebar {
-    grid-row: span 2;
-    background-color: rgb(73, 73, 73);
+  grid-row: span 2;
+  background-color: rgb(73, 73, 73);
 }
 
 .menu {
-    font-size: 25px;
-    font-weight: 900;
-    color: white;
-    margin: 25px;
+  font-size: 25px;
+  font-weight: 900;
+  color: white;
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 }
 
-.menu>.logo{
-    font-size: 40px;
+.menu > .logo {
+  font-size: 40px;
 }
 
-.menu>ul, li {
-    display: flex;
-    list-style-type: none;
-    flex-direction: column;
-    gap: 10px;
+.menu > ul,
+li {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  gap: 10px;
 }
 
 li {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-#main, #settings {
-    padding-top: 40px;
+#main,
+#settings {
+  padding-top: 40px;
 }
 
 .search {
-    background-color: #ffff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    position: relative;
-    z-index: 1;
+  background-color: #ffff;
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+  z-index: 1;
 }
 
 .search-top {
-    display: flex;
-    margin: 16px;
-    gap: 16px;
-    align-items: center;
+  display: flex;
+  margin: 16px;
+  gap: 16px;
+  align-items: center;
 }
 
 .search-logo {
-    padding-left: 50px;
-    font-size: large;
-    cursor: pointer;
+  padding-left: 50px;
+  font-size: large;
+  cursor: pointer;
 }
 
 #search {
-    border-radius: 15px;
-    flex: 1 1 auto;
-    height: 20px;
-    background-color: rgb(239, 239, 239);
-    border: 0.2px solid black;
+  border-radius: 15px;
+  flex: 1 1 auto;
+  height: 20px;
+  background-color: rgb(239, 239, 239);
+  border: 0.2px solid black;
 }
 
-input[type='text'] {
-    padding-left: 8px;
-    font-size: medium;
+input[type="text"] {
+  padding-left: 8px;
+  font-size: medium;
 }
 
-.search-top>svg {
-    padding-left: 80px;
-    cursor: pointer;
+.search-top > svg {
+  padding-left: 80px;
+  cursor: pointer;
 }
 
 img {
-    width: 60px;
-    height: auto;
-    border-radius: 40px;
+  width: 60px;
+  height: auto;
+  border-radius: 40px;
 }
 
-.search-top>img {
-    width: 40px;
+.search-top > img {
+  width: 40px;
 }
 
-.search-top>.name {
-    font-size: large;
-    font-weight: 800;
-    padding-right: 50px;
+.search-top > .name {
+  font-size: large;
+  font-weight: 800;
+  padding-right: 50px;
 }
 
 .search-bottom {
-    display: flex;
-    margin: 16px;
-    padding-left: 45px;
-    gap: 16px;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  margin: 16px;
+  padding-left: 45px;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .left {
-    display: flex;
-    align-items: center;
-    gap: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
-.Greetings>#name {
-    font-size: larger;
-    font-weight: 800;
+.Greetings > #name {
+  font-size: larger;
+  font-weight: 800;
 }
 
-.search-bottom>ul {
-    display: flex;
-    gap: 25px;
-    padding-right: 50px;
+.search-bottom > ul {
+  display: flex;
+  gap: 25px;
+  padding-right: 50px;
 }
 
-.search-bottom>ul>button {
-    background-color: lightgrey;
-    border-radius: 60px;
-    border: 0.1px solid black;
-    width: 70px;
-    height: 30px;
-    cursor: pointer;
+.search-bottom > ul > button {
+  background-color: lightgrey;
+  border-radius: 60px;
+  border: 0.1px solid black;
+  width: 70px;
+  height: 30px;
+  cursor: pointer;
 }
 
 ul button:hover {
-    background-color: rgb(205, 204, 204); 
+  background-color: rgb(205, 204, 204);
 }
 
 ul button:active {
-    transform: translateY(-1px);
+  transform: translateY(-1px);
 }
 
 .body {
-    display: grid;
-    grid-template-columns: 1fr 250px;
+  display: grid;
+  grid-template-columns: 1fr 250px;
 }
 
 .header {
-    margin: 15px;
-    padding-top: 10px;
-    display: grid;
-    grid-template-rows: 10px repeat(3, 1fr);
-    gap: 16px;
+  margin: 15px;
+  padding-top: 10px;
+  display: grid;
+  grid-template-rows: 10px repeat(3, 1fr);
+  gap: 16px;
 }
 
-.header>span {
-    grid-column: span 2;
+.header > span {
+  grid-column: span 2;
 }
 
 .card {
-    display: grid;
-    grid-template-rows: auto 70px 1fr;
-    gap: 5px;
-    border-radius: 5px;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: grid;
+  grid-template-rows: auto 70px 1fr;
+  gap: 5px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 span {
-    font-weight: 800;
+  font-weight: 800;
 }
 
-.card>.title {
-    font-size: small;
-    padding-top: 20px;
+.card > .title {
+  font-size: small;
+  padding-top: 20px;
 }
 
-.card>.text {
-    font-size: smaller;
-    font-weight: 100;
-    color: #636363;
+.card > .text {
+  font-size: smaller;
+  font-weight: 100;
+  color: #636363;
 }
 
-.card>span {
-    padding-left: 30px;
-    padding-right: 30px;
+.card > span {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 svg {
-    width: 20px;
-    height: auto;
-    cursor: pointer;
+  width: 20px;
+  height: auto;
+  cursor: pointer;
 }
 
 .links {
-    display: flex;
-    justify-content: end;
-    gap: 10px;
-    padding-right: 20px;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  padding-right: 20px;
 }
 
 .right {
-    margin: 16px 16px 16px 0px;
-    padding-top: 7px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  margin: 16px 16px 16px 0px;
+  padding-top: 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .announcements {
-    background-color: white;
-    border-radius: 5px;
-    padding-top: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  border-radius: 5px;
+  padding-top: 10px;
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .place {
-    margin: 10px;
+  margin: 10px;
 }
 
 .announcements .info {
-    font-size: small;
-    display: grid;
-    margin: 16px;
-    padding-bottom: 10px;
-    grid-template-rows: auto;
-    border-bottom: 0.1px solid rgb(140, 140, 140);
+  font-size: small;
+  display: grid;
+  margin: 16px;
+  padding-bottom: 10px;
+  grid-template-rows: auto;
+  border-bottom: 0.1px solid rgb(140, 140, 140);
 }
 
 .announcements .info-diff {
-    font-size: small;
-    display: grid;
-    margin: 16px;
-    padding-bottom: 10px;
-    grid-template-rows: auto;
+  font-size: small;
+  display: grid;
+  margin: 16px;
+  padding-bottom: 10px;
+  grid-template-rows: auto;
 }
 
 .announcements span.text {
-    font-size: smaller;
-    font-weight: 100;
-    color: #636363;
+  font-size: smaller;
+  font-weight: 100;
+  color: #636363;
 }
 
 .trending {
-    padding-top: 20px;
-}
-
-.trending .title {
-
+  padding-top: 20px;
+  display: grid;
+  gap: 10px;
 }
 
 .trending .trends {
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 5px;
-    display: grid;
+  background-color: white;
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  display: grid;
 }
 
+.profile img {
+  width: 40px;
+  grid-row: span 2;
+}
+
+.information {
+    margin: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.at {
+    grid-column: span 1;
+    font-size: medium;
+} 
+
+.profile .name {
+    font-size: small;
+    color: #636363;
+}
